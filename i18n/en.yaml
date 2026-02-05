@@ -87,7 +87,7 @@ horizontal-walljump-speed: Horizontal Walljump Speed
 wallcling: Wallcling
 max-wallcling: Max Wallcling
 pratfall-accel: Pratfall Accel
-pratfall-land-time: Pratfall Land Time
+# pratfall-land-time: Pratfall Land Time
 # Dodges
 parry: Parry
 airdodge-speed: Airdodge Speed

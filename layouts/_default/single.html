@@ -77,7 +77,7 @@
           </p>
         {{ end }}
         {{ if .IsTranslated }}
-          {{ partial "partials/language-picker.html" . }}
+          {{ partial "language-picker.html" . }}
         {{ end }}
       </div>
       {{ .Content }}
@@ -98,7 +98,7 @@
         <a target="_blank" rel="noopener noreferrer" href="{{ $u.patchNotes }}">Patch {{ $u.patch }}</a>
       </p>
       <p>
-        {{ partial "partials/svg/code.svg" }}
+        {{ partial "svg/code.svg" }}
         {{ T "for-developers" }}:
         {{ $link := "" }}{{ $file := "" }}
         {{ range .AllTranslations }}{{ if eq .Language.Lang "en" }}
@@ -113,17 +113,17 @@
       {{ else }}
       <p>
         {{ if eq site.Language.Lang "en" }}
-          {{ partial "partials/svg/chat.svg" }}Questions?
+          {{ partial "svg/chat.svg" }}Questions?
           <a target="_blank" rel="noopener noreferrer" href="{{ site.Data.links.roaa.discord }}">
             Ask on Discord!
           </a>
-          <br><a href="/lectures/rss.xml">{{ partial "partials/svg/rss.svg" }}RSS feed</a>
+          <br><a href="/lectures/rss.xml">{{ partial "svg/rss.svg" }}RSS feed</a>
         {{ else if eq site.Language.Lang "es" }}
-          {{ partial "partials/svg/chat.svg" }}¿Tienes preguntas?
+          {{ partial "svg/chat.svg" }}¿Tienes preguntas?
           <a target="_blank" rel="noopener noreferrer" href="{{ site.Data.links.es.discord }}">
             ¡Pregunta en Discord!
           </a>
-          <br><a href="/es/lecturas/rss.xml">{{ partial "partials/svg/rss.svg" }}RSS feed</a>
+          <br><a href="/es/lecturas/rss.xml">{{ partial "svg/rss.svg" }}RSS feed</a>
         {{ end }}
       </p>
       {{ end }}

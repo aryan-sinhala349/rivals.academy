@@ -153,7 +153,7 @@ dashAttack:
     priority:
     - hitbox: Front
       priority: 7
-      hitbox: Above
+    - hitbox: Above
       priority: 6
     killsProjectiles: true
     parryStun: true
